@@ -64,3 +64,32 @@ plot(subruleG, method = "graph", engine = "interactive")
 ```{r}
 plot(subruleG, method = "graph",engine="htmlwidget")
 ```
+
+
+```{r}
+rules_s <- apriori(data = genres, parameter = list(support = 0.03, confidence = 0.8, minlen = 3))
+```
+
+```{r}
+inspect(head(sort(rules_s, by = "lift"),15))
+```
+
+```{r}
+SortedRuleC <- sort(rules_s, by="lift", decreasing = TRUE)
+```
+
+```{r}
+subruleC <- head(sort(SortedRuleC, by="lift"),25)
+```
+
+```{r}
+inspect(subruleC)
+```
+
+```{r}
+plot(subruleC, method = "graph", engine = "interactive")
+```
+
+```{r}
+plot(subruleC, method = "graph",engine="htmlwidget")
+```
