@@ -54,9 +54,13 @@ subruleG <- head(sort(SortedRulesG, by="confidence"),20)
 ```
 
 ```{r}
-plot(subruleG)
+inspect(subruleG)
 ```
 
 ```{r}
 plot(subruleG, method = "graph", engine = "interactive")
+```
+
+```{r}
+plot(subruleG, method = "graph",engine="htmlwidget")
 ```
