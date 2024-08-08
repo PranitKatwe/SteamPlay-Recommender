@@ -1,0 +1,3 @@
+# SteamPlay Recommender
+* Developed a comprehensive game recommendation engine by scraping data from Steam using a custom-built parser, collecting information on over 1,000 games including ratings, reviews, and recommendations; performed data cleaning, handling missing values and duplicates, and EDA, resulting in 15% improvement in feature selection. 
+* Implemented unsupervised learning techniques Hierarchical, K-means Clustering and Association Rule Mining to uncover hidden patterns and applied supervised learning algorithms such as Naive Bayes (86% accuracy), Decision Trees (96%), SVM (97%), and ANN (96%) to build accurate recommendation models, evaluating and optimizing their performance by 20%. 
